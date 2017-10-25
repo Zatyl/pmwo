@@ -14,12 +14,12 @@ Specyfikacja:
    * Wypożyczanie książek
    * Oddawanie książek
    * Dodawanie recenzji
-      -          Funkcjonalności adminów
-      -         Dodawanie użytkowników
-      -         Odbieranie książek 
-      -        Blokowanie użytkowników
-      -        Dodawanie książek
-              -        Usuwanie książek
+* Funkcjonalności adminów
+   * Dodawanie użytkowników
+   * Odbieranie książek 
+   * Blokowanie użytkowników
+   * Dodawanie książek
+   * Usuwanie książek
 
 
 Użyte technologie:
