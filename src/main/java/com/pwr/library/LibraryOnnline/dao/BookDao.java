@@ -11,4 +11,5 @@ import java.util.List;
 @Repository
 public interface BookDao extends CrudRepository<Book, Long> {
     List<Book> findAll();
+    Book findById(long id);
 }

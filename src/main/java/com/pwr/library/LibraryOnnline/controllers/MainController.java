@@ -3,6 +3,7 @@ package com.pwr.library.LibraryOnnline.controllers;
 
 import com.pwr.library.LibraryOnnline.dao.BookDao;
 import com.pwr.library.LibraryOnnline.model.Book;
+import com.pwr.library.LibraryOnnline.services.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,6 +22,9 @@ public class MainController {
 
     @Autowired
     private BookDao bookDao;
+
+    @Autowired
+    private BookService bookService;
 
     @GetMapping("/welcome")
     public String welcome()
@@ -68,10 +72,25 @@ public class MainController {
         return "addBook";
     }
 
+    @PostMapping("/editBook")
+    public String editBookPost(@ModelAttribute("book") Book book, Model model)
+    {
+        bookDao.save(book);
+        return "bookListAdmin";
+    }
+
+    @GetMapping("/editBook/{id}")
+    public String editBook(Model model, @PathVariable("id") long id)
+    {
+        Book book = bookDao.findById(id);
+        model.addAttribute("book", book);
+        model.addAttribute("id", book.getId());
+        return "editBook";
+    }
+
     @GetMapping("/bookShelf/{user}")
     public String bookShelf(@PathVariable("user") long id)
     {
-
         return "bookShelf";
     }
 

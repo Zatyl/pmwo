@@ -24,6 +24,7 @@
               <td><c:out value="${book.stockLeft}" /></td>
               <td><c:out value="${book.max}" /></td>
               <td><c:out value="${book.rating}" /></td>
+
             </tr>
           </c:forEach>
     </table>

@@ -24,6 +24,11 @@
               <td><c:out value="${book.stockLeft}" /></td>
               <td><c:out value="${book.max}" /></td>
               <td><c:out value="${book.rating}" /></td>
+              <td>
+                <form action="http://localhost:8081${pageContext.request.contextPath}/editBook/${book.id}">
+                      <input type="submit" value="Edit" />
+                  </form>
+              </td>
             </tr>
           </c:forEach>
     </table>
