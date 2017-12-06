@@ -5,6 +5,7 @@ import lombok.Data;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
+import java.sql.Date;
 
 @Data
 @Entity
@@ -18,12 +19,21 @@ public class BookDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
+
     @Column(name = "user_id")
     private long user;
 
     @NotNull
-    @Column(name = "bookshelf_id")
-    private long bookShelf;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "bookshelf_id", nullable = false)
+    private BookShelf bookShelf;
+
+    @NotNull
+    @OneToOne(fetch = FetchType.LAZY)
+    private Book book;
 
     private String description;
+
+    private Date expireDate;
 }

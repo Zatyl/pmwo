@@ -12,5 +12,6 @@ import java.util.List;
 @Transactional
 @Repository
 public interface BookDetailsDao extends CrudRepository<BookDetails, Long> {
-    List<BookShelf> findByUser(long user);
+    List<BookDetails> findByUser(long user);
+    List<BookDetails> findByBookShelf(BookShelf bookShelf);
 }

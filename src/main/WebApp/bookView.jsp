@@ -13,6 +13,7 @@
                   <td>Description</td>
                   <td>Price</td>
                   <td>Stock Left</td>
+                  <td>Max</td>
                   <td>Rating</td>
                 </tr>
           <c:forEach items="${bookList}" var="book">
@@ -21,10 +22,11 @@
               <td><c:out value="${book.description}" /></td>
               <td><c:out value="${book.price}" /></td>
               <td><c:out value="${book.stockLeft}" /></td>
+              <td><c:out value="${book.max}" /></td>
               <td><c:out value="${book.rating}" /></td>
               <td>
-                <form action="http://localhost:8081${pageContext.request.contextPath}/rentBook?bookId=${book.id}&userId=1&bookshelfId=${id}">
-                      <input type="submit" value="Rent" />
+                <form action="http://localhost:8081${pageContext.request.contextPath}/editBook/${book.id}">
+                      <input type="submit" value="Edit" />
                   </form>
               </td>
             </tr>
