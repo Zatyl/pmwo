@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
-<head>
-    <title>Spring Security Example</title>
-</head>
-<body>
-<h1>Welcome!</h1>
+<jsp:include page="header.jsp"/>
 
-<jsp:include page="menu.jsp" />
+<div class="container">
 
-<p>Hello</p>
-</body>
-</html>
+    <h1>Welcome!</h1>
+
+    <jsp:include page="menu.jsp"/>
+
+    <p>Hello</p>
+</div>
+
+<jsp:include page="footer.jsp"/>
