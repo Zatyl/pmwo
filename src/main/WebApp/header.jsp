@@ -6,6 +6,7 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <head>
     <title>Online Library v0.1</title>
-    <link rel='stylesheet' href='webjars/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='/webjars/bootstrap/3.3.6/css/bootstrap.min.css'>
 </head>
-<body>
+<body style="background-color: #F0F0F0;">
+<div class="container" style="min-height:500px;">

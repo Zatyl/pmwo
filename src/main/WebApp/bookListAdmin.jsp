@@ -3,19 +3,18 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <jsp:include page="header.jsp"/>
-<div class="container">
     <h1>Book List Admin</h1>
     <jsp:include page="menu.jsp"/>
 
     <table class="table table-striped">
         <tr>
-            <td>Name</td>
-            <td>Description</td>
-            <td>Price</td>
-            <td>Stock Left</td>
-            <td>Max</td>
-            <td>Rating</td>
-            <td>Action</td>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Stock Left</th>
+            <th>Max</th>
+            <th>Rating</th>
+            <th>Action</th>
         </tr>
         <c:forEach items="${bookList}" var="book">
             <tr>
@@ -27,7 +26,7 @@
                 <td><c:out value="${book.rating}"/></td>
                 <td>
                     <form action="http://localhost:8081${pageContext.request.contextPath}/editBook/${book.id}">
-                        <button class="btn btn-info" type="submit"/><span class="glyphicon glyphicon-edit"></span>Edit</button>
+                        <button class="btn btn-info" type="submit"/><span class="glyphicon glyphicon-edit" style="padding-right: 10px;"></span>Edit</button>
                     </form>
                 </td>
             </tr>

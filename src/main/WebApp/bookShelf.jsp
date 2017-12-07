@@ -4,13 +4,13 @@
 
 <jsp:include page="header.jsp"/>
 
-<div class="container">
+    <h1>User Bookshelf</h1>
     <jsp:include page="menu.jsp"/>
-
-    <table>
+    <table class="table table-striped">
         <tr>
-            <td>Id</td>
-            <td>Description</td>
+            <th>Id</th>
+            <th>Description</th>
+            <th>Action</th>
         </tr>
         <c:forEach items="${shelfs}" var="bookShelf">
             <tr>
@@ -18,12 +18,11 @@
                 <td><c:out value="${bookShelf.description}"/></td>
                 <td>
                     <form action="http://localhost:8081${pageContext.request.contextPath}/bookshelf/${bookShelf.id}">
-                        <input type="submit" value="View"/>
+                        <button class="btn btn-info" type="submit" style="margin-bottom: 5px;"/>View</button>
                     </form>
-                </td>
-                <td>
+
                     <form action="http://localhost:8081${pageContext.request.contextPath}/bookList/${bookShelf.id}">
-                        <input type="submit" value="Add book"/>
+                        <button class="btn btn-success" type="submit"/>Add book</button>
                     </form>
                 </td>
             </tr>
@@ -31,7 +30,7 @@
     </table>
 
     <form action="http://localhost:8081${pageContext.request.contextPath}/addBookShelf/${id}">
-        <input type="submit" value="Add Book Shelf"/>
+        <button class="btn btn-success" type="submit"/>Add Book Shelf</button>
     </form>
 
 </div>

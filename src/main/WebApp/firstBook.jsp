@@ -3,7 +3,6 @@
 
 <jsp:include page="header.jsp"/>
 
-<div class="container">
     <jsp:include page="menu.jsp"/>
 
     <h1> ${book.name} </h1>

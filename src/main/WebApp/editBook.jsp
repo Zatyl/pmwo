@@ -3,10 +3,10 @@
 
 <jsp:include page="header.jsp"/>
 
-<div class="container">
+    <h1>Edit Book</h1>
     <jsp:include page="menu.jsp"/>
     <form:form method="POST" modelAttribute="book" action="${pageContext.request.contextPath}/addBook">
-        <table>
+        <table class="table table-striped">
             <form:input type="hidden" path="id" value="${book.id}"/>
             <tr>
                 <td>Name: ${book.name}</td>
@@ -35,8 +35,9 @@
 
             <tr>
                 <td>
-                    <input type="submit" value="Submit"/>
+                    <button class="btn btn-success" type="submit"/>Submit</button>
                 </td>
+                <td></td>
             </tr>
         </table>
     </form:form>

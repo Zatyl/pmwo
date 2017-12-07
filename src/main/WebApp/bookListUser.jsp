@@ -4,17 +4,17 @@
 
 <jsp:include page="header.jsp"/>
 
-<div class="container">
     <h1>Book List User</h1>
     <jsp:include page="menu.jsp"/>
 
-    <table>
+    <table class="table table-striped">
         <tr>
-            <td>Name</td>
-            <td>Description</td>
-            <td>Price</td>
-            <td>Stock Left</td>
-            <td>Rating</td>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Stock Left</th>
+            <th>Rating</th>
+            <th>Action</th>
         </tr>
         <c:forEach items="${bookList}" var="book">
             <tr>
@@ -25,7 +25,7 @@
                 <td><c:out value="${book.rating}"/></td>
                 <td>
                     <form action="http://localhost:8081${pageContext.request.contextPath}/rentBook?bookId=${book.id}&userId=1&bookshelfId=${id}">
-                        <input type="submit" value="Rent"/>
+                        <button class="btn btn-success" type="submit"/>Rent</button>
                     </form>
                 </td>
             </tr>

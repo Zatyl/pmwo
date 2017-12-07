@@ -3,14 +3,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <jsp:include page="header.jsp"/>
-
-<div class="container">
+    <h1>Book Shelf Details</h1>
     <jsp:include page="menu.jsp"/>
 
-    <table>
+    <table class="table table-striped">
         <tr>
-            <td>Description</td>
-            <td>Expire Date</td>
+            <th>Description</th>
+            <th>Expire Date</th>
         </tr>
         <c:forEach items="${books}" var="book">
             <tr>

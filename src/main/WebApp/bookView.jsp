@@ -4,7 +4,6 @@
 
 <jsp:include page="header.jsp"/>
 
-<div class="container">
     <jsp:include page="menu.jsp"/>
 
     <table>
