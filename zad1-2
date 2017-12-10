@@ -1,0 +1,37 @@
+Temat: Aplikacja webowa do zarządzania zbiorem książek
+
+
+Grupa: Bartosz Ożga, Grzegorz Szpynda, Jakub Zatylny
+
+
+Specyfikacja: 
+* Aplikacja webowa
+* Użytkownicy posiadający różne uprawnienia
+* Funkcjonalności użytkowników:
+   * Wypożyczanie książek
+   * Oddawanie książek
+   * Dodawanie recenzji
+* Funkcjonalności adminów
+   * Dodawanie użytkowników
+   * Odbieranie książek 
+   * Blokowanie użytkowników
+   * Dodawanie książek
+   * Usuwanie książek
+
+
+Użyte technologie:
+
+
+Spring boot 2:  Framework pozwalający na budowę aplikacji webowych w języku java. Poza pierwotną funkcjonalnością dependency injection(wstrzykiwanie zależności) oferuje on możliwość automatycznego stawiania serwera Tomcat oraz umieszczania na nim aplikacji bez konieczności nadmiernej konfiguracji aplikacji koniecznej w Spring MVC.
+
+
+Tomcat: Serwer. Spring boot automatycznie załatwia sprawę jego konfiguracji.
+
+
+Hibernate: Framework do ORM. Umożliwia on łatwe rzutowanie bazy danych na pojo (Plain Old Java Object). Jak każdy inny framework implementujący JPA znacznie ogranicza on ilość linijek kodu koniecznych do wykonania operacji na bazie danych w porównaniu do chociażby zwykłego JDBC. Używamy Hibernate’a głównie ze względu na ilość materiałów dostępnych na jego temat oraz znajomości tego frameworka w grupie.
+
+
+Java9: W projekcie raczej nie skorzystamy z pełnych możliwości javy9 jednak przy tworzeniu nowych aplikacji najlepiej wykorzystywać najnowsze wersje javy. W dłużej wspieranych aplikacjach przychodzi w końcu moment w którym trzeba podbić wersję javy. Im więcej kodu oraz wersji javy do “przeskoczenia” tym bardziej skomplikowany taki proces się staje. Z tego powodu lepiej zawsze zaczynać od najnowszej wersji.
+
+
+MySql: Baza danych. Przy małych projektach wybór bazy danych jest kwestią mało istotną. MySql jest bazą z którą każdy w grupie pracował.
