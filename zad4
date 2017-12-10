@@ -1,0 +1,16 @@
+Pierwszy sprint miał na celu stworzenie pierwszej wersji aplikacji z minimalną funkcjonalnością. Przebiegł on bez problemu
+i w trakcie prezentacji mieliśmy już prostą aplikację tworzącą książki i zapisującą je do bazy. Na tym etapie nie mialiśmy 
+jeszcze frontendu ze względu na konieczność wcześniejszego napisania logiki aplikacji. 
+
+Dobrze zrobione rzeczy:
+-Komunikacja z bazą danych
+-Pierwsza funkcjonalność
+
+Co mogłoby być zrobione lepiej:
+-Szybsze wykonanie logiki mogłoby umożliwić pracę nad frontendem jeszcze w tym sprincie.
+
+
+Na kolejny sprint:
+-Spring security
+-Dodanie funkcjonalności umożliwiającej wypożyczanie książek
+-Stworzenie frontu aplikacji
