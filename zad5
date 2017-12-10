@@ -1,0 +1,15 @@
+Dobrze zrobione rzeczy:
+-Pierwsza wersja frontendu dla działających już funkcjonalności
+-Funkcjonalności wypożyczania książek i segregowania ich na półkach
+
+Co mogłoby być zrobione lepiej:
+-Niektóre funkcjonalności dalej wymagają usprawnień i poprawek.
+-Można by było skoncentrować więcej sił w próbę zmuszenia do działania spring security, 
+ co umożliwiło by w następnym sprincie oddzielenie funkcjonalności admina i użytkownika
+
+
+Na kolejny sprint:
+-Spring security
+-Naprawa błędów obecnych funkcjonalności
+-Dodanie funkcjonalności oceniania książek
+-Zaczęcie od nowej funkcjonalności umożliwi pracę nad frontendem w czasie gdy będzie przygotowywane spring security
