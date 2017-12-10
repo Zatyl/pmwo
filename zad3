@@ -1,0 +1,14 @@
+Harmonogram:
+* 23.10 - 29.10         Stworzenie działającej bazy aplikacji z podstawowymi endpointami.
+* 29.10 - 12.11        Zintegrowanie backendu z widokiem.
+* 12.10 - 19.11        Dodanie mechanizmu dostępu do określonych części aplikacji w zależności od uprawnień użytkownika.
+* 19.11 - 26.11         Stworzenie logiki dostępu do bazy danych
+* 26.11 - 03.12        Ostateczna integracja z frontendem
+* 03.12 - 10.12         Testy i naprawa błędów.
+
+
+Ryzyka:
+* Mechanizm dostępu do treści w zależności od uprawnień wymaga wcześniejszego stworzenia bazy danych. W przypadku gdy to zadanie będzie miało poślizg czasowy, można stworzyć użytkowników lokalnych z uprawnieniami niebędących w bazie danych.
+* Stworzenie logiki, szczególnie operacje na bazie wymagają wcześniejszego utworzenia tabel. W przypadku poślizgu lub problemów należy rzucić w Zatyla czymś ciężkim.
+* Integracja z frontendem. Mogą wystąpić problemy z połączeniem tych dwóch warstw dlatego dałem tu więcej czasu na realizację. W razie narastających problemów można zmienić sposób komunikacji a w ostateczności skorzystać z dodatkowych frameworków.
+* Testy i naprawa błędów. W przypadku krytycznych błędów, których naprawa nie mieściłaby się w terminie można przejrzeć wcześniejsze działające wersje i próbować na ich bazie spowrotem zaimplementować niedziałające funkcjonalności. W ostateczności należy zamówić pizze i włączyć deadline mode.
